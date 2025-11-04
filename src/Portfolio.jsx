@@ -72,7 +72,7 @@ const Pill = ({ children }) => (
   <span className='inline-flex items-center rounded-full bg-muted px-3 py-1 text-sm font-medium'>{children}</span>
 )
 
-export default function Portfolio() {
+export default function Portfolio({ onNavigate }) {
   return (
     <div className='min-h-screen bg-gradient-to-b from-white via-white to-muted/30 text-foreground'>
       {/* NAVBAR */}
@@ -93,6 +93,16 @@ export default function Portfolio() {
                 {label}
               </a>
             ))}
+            <a
+              href='/experience'
+              className='text-sm text-foreground/80 hover:text-foreground transition-colors'
+              onClick={(event) => {
+                event.preventDefault()
+                onNavigate?.('/experience')
+              }}
+            >
+              Experience
+            </a>
             <a href={PROFILE.links.github} target='_blank' rel='noreferrer' className='ml-2 inline-flex items-center rounded-2xl border px-3 py-1.5 text-sm hover:bg-muted'>
               <Github className='h-4 w-4 mr-2' /> Source
             </a>
@@ -123,6 +133,16 @@ export default function Portfolio() {
                   </a>
                   <a href={PROFILE.links.email} className='inline-flex items-center rounded-2xl border px-4 py-2 text-sm hover:bg-muted'>
                     <Mail className='h-4 w-4 mr-2' /> Email
+                  </a>
+                  <a
+                    href='/experience'
+                    className='inline-flex items-center rounded-2xl border px-4 py-2 text-sm hover:bg-muted'
+                    onClick={(event) => {
+                      event.preventDefault()
+                      onNavigate?.('/experience')
+                    }}
+                  >
+                    <Sparkles className='h-4 w-4 mr-2' /> Experience timeline
                   </a>
                 </div>
               </div>
@@ -248,6 +268,16 @@ export default function Portfolio() {
             <a className='hover:underline' href='#gpts'>GPTs</a>
             <a className='hover:underline' href='#links'>Links</a>
             <a className='hover:underline' href='#contact'>Contact</a>
+            <a
+              className='hover:underline'
+              href='/experience'
+              onClick={(event) => {
+                event.preventDefault()
+                onNavigate?.('/experience')
+              }}
+            >
+              Experience
+            </a>
           </div>
         </div>
       </footer>
