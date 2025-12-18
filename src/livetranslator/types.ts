@@ -8,6 +8,8 @@ export enum WorkflowStep {
   SAVING = 'SAVING'
 }
 
+export type Language = 'en' | 'zh';
+
 export interface Segment {
   id: string;
   originalText: string;
