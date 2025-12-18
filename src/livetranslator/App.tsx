@@ -21,17 +21,23 @@ import DeviceSimulator from './components/DeviceSimulator';
 import AudioLogicCard from './components/AudioLogicCard';
 import { WorkflowStep, Segment, Language } from './types';
 
+const LANG_STORAGE_KEY = 'livetranslator.lang';
+
 const App: React.FC = () => {
   const [currentStep, setCurrentStep] = useState<WorkflowStep>(WorkflowStep.IDLE);
   const [segments, setSegments] = useState<Segment[]>([]);
   const [hasHeadphones, setHasHeadphones] = useState(false);
   const [partialTranscript, setPartialTranscript] = useState("");
   
-  // 語言設置：預設根據瀏覽器語言，非中即英
+  // 語言設置：預設英文（可記住用戶切換偏好）
   const [lang, setLang] = useState<Language>(() => {
-    const browserLang = navigator.language.toLowerCase();
-    return (browserLang.includes('zh') || browserLang.includes('hk') || browserLang.includes('tw')) ? 'zh' : 'en';
+    const stored = typeof window !== 'undefined' ? window.localStorage.getItem(LANG_STORAGE_KEY) : null;
+    return stored === 'zh' || stored === 'en' ? stored : 'en';
   });
+
+  useEffect(() => {
+    window.localStorage.setItem(LANG_STORAGE_KEY, lang);
+  }, [lang]);
 
   const t = {
     en: {
