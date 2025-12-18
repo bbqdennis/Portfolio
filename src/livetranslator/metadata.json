@@ -1,0 +1,7 @@
+{
+  "name": "LiveTranslator Flow Visualizer",
+  "description": "An interactive technical flow visualization and interactive demonstration of the LiveTranslator iOS application architecture.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

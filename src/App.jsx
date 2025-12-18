@@ -1,9 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import Portfolio from './Portfolio.jsx'
 import ExperienceTimeline from './ExperienceTimeline.jsx'
+import LiveTranslatorPage from './livetranslator/EmbeddedPage.jsx'
 
 const DEFAULT_ROUTE = '/'
-const ROUTES = new Set([DEFAULT_ROUTE, '/experience'])
+const ROUTES = new Set([DEFAULT_ROUTE, '/experience', '/livetranslator'])
 
 const normalizePath = () => (ROUTES.has(window.location.pathname) ? window.location.pathname : DEFAULT_ROUTE)
 
@@ -28,6 +29,10 @@ export default function App() {
 
   if (path === '/experience') {
     return <ExperienceTimeline onNavigate={navigate} />
+  }
+
+  if (path === '/livetranslator') {
+    return <LiveTranslatorPage onNavigate={navigate} />
   }
 
   return <Portfolio onNavigate={navigate} />

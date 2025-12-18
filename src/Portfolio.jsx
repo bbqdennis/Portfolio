@@ -25,10 +25,11 @@ const SKILLS = {
 }
 
 const PROJECTS = [
-  { title: 'UK Daily Event — Activities for every family', href: 'https://uk-daily-event.vercel.app', description: 'Curates the latest family-friendly happenings across the UK so parents can plan daily adventures effortlessly.', tags: ['Next.js', 'Events', 'Family'], icon: <Globe className='h-5 w-5' /> },
+  { title: 'UK Daily Event — Activities for every family', href: 'https://ukdailyevents.co.uk', description: 'Curates the latest family-friendly happenings across the UK so parents can plan daily adventures effortlessly.', tags: ['Next.js', 'Events', 'Family'], icon: <Globe className='h-5 w-5' /> },
   { title: 'Tarot insights — Ask your question with Tarot Master', href: 'https://tarot-insight-eta.vercel.app', description: 'Generative AI web app offering tarot-style insights with a clean, responsive UI.', tags: ['Next.js', 'Vercel', 'AI', 'UX'], icon: <Sparkles className='h-5 w-5' /> },
   { title: 'MSN Chat Viewer — View your MSN chat history', href: 'https://friendschatbot.netlify.app', description: 'Nostalgic utility to parse and browse old MSN chat logs right in the browser.', tags: ['Netlify', 'Parser', 'Frontend'], icon: <Terminal className='h-5 w-5' /> },
   { title: 'Mum All Known — Knowledge for the mum about the baby birth', href: 'https://mumallknown.netlify.app', description: 'Curated knowledge base for mums, focused on pregnancy and baby birth topics.', tags: ['Content', 'Search', 'Healthcare'], icon: <Database className='h-5 w-5' /> },
+  { title: 'Live Translator - Realtime speech translator', href: '/livetranslator', description: 'An native iOS app - Real-time translator using native STT + TTS with Gemini API. Listen & speak continuously, supports Bluetooth earphones for live playback.', tags: ['iOS', 'SwiftUI', 'STT', 'TTS', 'Gemini', 'Bluetooth'], icon: <Smartphone className='h-5 w-5' /> },
 ]
 
 const GPTS = [
@@ -203,7 +204,17 @@ export default function Portfolio({ onNavigate }) {
                   <div className='flex flex-wrap gap-2 mb-4'>
                     {p.tags.map((t) => <span key={t} className='rounded-full border px-2 py-0.5 text-xs'>{t}</span>)}
                   </div>
-                  <a href={p.href} target='_blank' rel='noreferrer' className='inline-flex items-center text-sm font-medium underline underline-offset-4'>
+                  <a
+                    href={p.href}
+                    target={p.href.startsWith('/') ? undefined : '_blank'}
+                    rel={p.href.startsWith('/') ? undefined : 'noreferrer'}
+                    className='inline-flex items-center text-sm font-medium underline underline-offset-4'
+                    onClick={(event) => {
+                      if (!p.href.startsWith('/')) return
+                      event.preventDefault()
+                      onNavigate?.(p.href)
+                    }}
+                  >
                     <ExternalLink className='h-4 w-4 mr-2' /> Visit project
                   </a>
                 </div>
