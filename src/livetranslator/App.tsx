@@ -14,7 +14,8 @@ import {
   Speaker,
   Play,
   RefreshCcw,
-  Languages
+  Languages,
+  ExternalLink
 } from 'lucide-react';
 import FlowDiagram from './components/FlowDiagram';
 import DeviceSimulator from './components/DeviceSimulator';
@@ -22,6 +23,7 @@ import AudioLogicCard from './components/AudioLogicCard';
 import { WorkflowStep, Segment, Language } from './types';
 
 const LANG_STORAGE_KEY = 'livetranslator.lang';
+const DEMO_VIDEO_URL = 'https://youtube.com/shorts/P4e2XgZsJFc';
 
 const App: React.FC = () => {
   const [currentStep, setCurrentStep] = useState<WorkflowStep>(WorkflowStep.IDLE);
@@ -52,6 +54,7 @@ const App: React.FC = () => {
       userDefaults: "UserDefaults (JSON)",
       userDefaultsDesc: "Stores conversation history and drafts for session recovery.",
       footer: "Built with SwiftUI + MVVM. Showcasing coordination between Apple Speech, Google Gemini, and AVSpeechSynthesizer.",
+      demoVideo: "Demo Video",
       langBtn: "Switch to 中文",
       status: "STATUS",
       flow1: "User Speaks",
@@ -75,6 +78,7 @@ const App: React.FC = () => {
       userDefaults: "UserDefaults (JSON)",
       userDefaultsDesc: "存儲歷史對話記錄與當前草稿，實現 App 重啟恢復。",
       footer: "基於 SwiftUI + MVVM 架構設計。展示 Apple Speech (STT)、Google Gemini (LLM) 與 AVSpeechSynthesizer (TTS) 的協同工作流。",
+      demoVideo: "示範影片",
       langBtn: "切換至 English",
       status: "狀態",
       flow1: "用戶說話",
@@ -147,6 +151,15 @@ const App: React.FC = () => {
             <Languages size={16} />
             {t.langBtn}
           </button>
+          <a
+            href={DEMO_VIDEO_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="px-4 py-2 text-sm text-slate-300 hover:text-white border border-slate-700 rounded-lg transition-colors flex items-center gap-2"
+          >
+            <ExternalLink size={16} />
+            {t.demoVideo}
+          </a>
           <button 
             onClick={resetDemo}
             className="px-4 py-2 text-sm text-slate-300 hover:text-white border border-slate-700 rounded-lg transition-colors flex items-center gap-2"
