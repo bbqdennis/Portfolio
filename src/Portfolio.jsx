@@ -4,11 +4,11 @@ import { ArrowUpRight, Github, Linkedin, Mail, MapPin, Globe, Sparkles, External
 
 const PROFILE = {
   name: 'Dennis Cheng',
-  title: 'System Analyst · iOS Developer · Prompt Engineer',
+  title: 'Applied AI & Automation System Designer',
   location: 'Manchester, United Kingdom',
-  tagline: 'Building reliable apps, AI automations, and CI/CD that ship fast and scale gracefully.',
+  tagline: 'I design AI-powered automation and orchestration systems that transform unstructured inputs into structured decisions and automated actions.',
   summary:
-    'Experienced System Analyst with 10+ years across system design, mobile & backend, micro-services, automation, DevOps, AI workflow, NLP and Prompt Engineering. Proven track record in analyzing business requirements, optimizing system performance, and leading development teams. Specialized in CI/CD, API design, cloud architecture, and chatbot development using Python, LangChain, Swift, Docker, and Jenkins.',
+    'Applied AI & Automation System Designer with over a decade of engineering experience.\nSpecialising in recent years in designing and delivering AI-powered automation and orchestration systems across telecom, mobile platforms, and internal operations.\n\nFocused on transforming unstructured inputs into structured decisions and automated actions using LLMs, Python, and workflow automation.',
   links: {
     linkedin: 'https://www.linkedin.com/in/dennis-cheng-49628222/',
     github: 'https://github.com/bbqdennis',
@@ -17,11 +17,11 @@ const PROFILE = {
 }
 
 const SKILLS = {
-  Programming: ['Python', 'SwiftUI', 'Swift', 'Objective-C', 'Shell Script', 'SQL', 'PHP', 'Dart', 'Flutter'],
-  'DevOps & Automation': ['Jenkins', 'Docker', 'CI/CD Pipelines', 'JIRA', 'Fastlane', 'GitHub', 'n8n'],
-  'Cloud & Database': ['AWS', 'Firebase', 'SQL Server', 'Oracle', 'VectorDB'],
-  'System Architecture': ['Micro-services', 'API Design', 'AI Automation', 'NLP'],
-  'Development Practices': ['Agile (Scrum)', 'Test-Driven Development (TDD)', 'System Optimization'],
+  Programming: ['Python', 'SQL', 'Shell Script'],
+  'DevOps & Automation': ['Docker', 'CI/CD Pipelines', 'GitHub', 'n8n', 'Jenkins'],
+  'Cloud & Database': ['AWS', 'SQL', 'Vector Databases'],
+  'System Architecture': ['AI Orchestration', 'Decision Automation', 'Workflow Automation', 'API & System Design'],
+  'Development Practices': ['System Thinking', 'Automation-First Development', 'Operational Optimisation'],
 }
 
 const PROJECTS = [
@@ -119,12 +119,12 @@ export default function Portfolio({ onNavigate }) {
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-6'>
               <div className='max-w-3xl'>
-                <h1 className='text-3xl md:text-5xl font-bold tracking-tight leading-tight'>Hi, I'm Dennis — I design systems, craft iOS apps, and automate with AI.</h1>
+                <h1 className='text-3xl md:text-5xl font-bold tracking-tight leading-tight'>Hi, I'm Dennis — I design applied AI & automation systems.</h1>
                 <p className='mt-4 text-neutral-600 text-base md:text-lg'>{PROFILE.tagline}</p>
                 <div className='flex flex-wrap items-center gap-3 mt-6'>
                   <Pill><MapPin className='h-3.5 w-3.5 mr-1' /> {PROFILE.location}</Pill>
-                  <Pill>iOS · Flutter · Python · LangChain</Pill>
-                  <Pill>CI/CD · Docker · Jenkins</Pill>
+                  <Pill>AI Orchestration · Automation · System Design</Pill>
+                  <Pill>LLMs · Python · Workflow Automation</Pill>
                 </div>
                 <div className='flex gap-3 mt-6'>
                   <a href={PROFILE.links.linkedin} target='_blank' rel='noreferrer' className='inline-flex items-center rounded-2xl bg-primary text-white px-4 py-2 text-sm hover:opacity-90'>
@@ -159,12 +159,12 @@ export default function Portfolio({ onNavigate }) {
       </section>
 
       {/* ABOUT */}
-      <Section id='about' title='About' icon={<Brain className='h-5 w-5' />} description='System Analyst with hands-on iOS & Flutter delivery, plus production-grade AI workflows.'>
+      <Section id='about' title='About' icon={<Brain className='h-5 w-5' />} description='Applied AI & Automation System Designer focused on production-grade decision automation and system orchestration.'>
         <div className='grid md:grid-cols-3 gap-6'>
           {[
-            { icon: <Code2 className='h-5 w-5' />, title: 'What I Do', points: ['Architect micro-services & APIs for real-world products.', 'Ship iOS apps (Swift/SwiftUI/Objective‑C) and Flutter apps.', 'Build AI automations, chatbots, and NLP pipes (Python, LangChain).', 'Set up CI/CD with Jenkins, Fastlane, Docker & GitHub Actions.']},
-            { icon: <Boxes className='h-5 w-5' />, title: 'How I Work', points: ['Translate business goals into technical plans & milestones.', 'Lead by prototypes, iterate with feedback, measure with metrics.', 'Pragmatic TDD, automation-first mindset, and clean releases.', 'Coach teams on best practices & developer experience.']},
-            { icon: <Rocket className='h-5 w-5' />, title: 'What I’m After', points: ['Senior/Lead roles in iOS, Mobile, or Platform Engineering.', 'Product teams that value velocity, reliability, and craft.', 'Opportunities to blend mobile, backend, and ML/AI automation.']},
+            { icon: <Code2 className='h-5 w-5' />, title: 'What I Do', points: ['Design AI-powered automation and orchestration systems for real-world operations.', 'Transform unstructured inputs (text, documents, requests, data) into structured decisions and automated actions.', 'Architect system workflows across frontend, backend, databases, and internal tools.', 'Build and integrate LLM-based systems using Python and workflow automation.']},
+            { icon: <Boxes className='h-5 w-5' />, title: 'How I Work', points: ['Translate business problems into system-level automation designs.', 'Design workflows that prioritise reliability, clarity, and maintainability.', 'Iterate with stakeholders using measurable operational impact.', 'Apply automation-first and system-thinking principles in delivery.']},
+            { icon: <Rocket className='h-5 w-5' />, title: 'What I’m After', points: ['Applied AI, Automation, or Internal Tools roles.', 'Teams solving real operational problems with AI and automation.', 'Environments that value system thinking, reliability, and pragmatic AI.']},
           ].map((card) => (
             <div key={card.title} className='rounded-3xl border bg-white p-5'>
               <div className='flex items-center gap-2 text-lg font-semibold'>{card.icon} {card.title}</div>

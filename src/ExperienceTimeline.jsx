@@ -4,37 +4,41 @@ import { ArrowLeft, Briefcase, Calendar, MapPin, Sparkles, Clock } from 'lucide-
 
 const PROFILE = {
   name: 'Dennis Cheng',
-  title: 'System Analyst · iOS Developer · Prompt Engineer',
+  title: 'Applied AI & Automation System Designer',
   location: 'Manchester, United Kingdom',
   email: 'bbqdennis@yahoo.com.hk',
 }
 
 const EXPERIENCES = [
   {
-    role: 'System Analyst',
+    role: 'System Analyst – AI & Automation Systems',
     company: 'Virtual Gaming Technology Limited',
     type: 'Full-time',
     location: 'Hong Kong SAR · On-site',
     period: 'Sep 2023 — Jul 2024 · 11 mos',
     highlights: [
-      'Revamped the flagship Flutter app with modernised journeys and measurable performance gains.',
-      'Owned CI/CD, automation scripts, and release governance across mobile deliverables.',
-      'Ran system health checks, analytics instrumentation, and enhancement roadmaps with stakeholders.',
+      'Designed and enhanced automation and system workflows across frontend, backend, and CI/CD pipelines.',
+      'Applied Python and scripting to streamline development and operational processes.',
+      'Contributed to system revamp initiatives, improving stability and delivery efficiency.',
+      'Collaborated cross-functionally to define system workflows and automation logic.',
     ],
-    stack: ['Flutter', 'Dart', 'Swift', 'Python', 'CI/CD', 'Jenkins'],
+    stack: ['Python', 'CI/CD', 'Jenkins', 'Automation', 'APIs', 'System Design'],
   },
   {
-    role: 'System Analyst',
+    role: 'System Analyst – AI Automation & Orchestration',
     company: 'China Mobile Hong Kong',
     type: 'Full-time',
     location: 'Hong Kong SAR',
     period: 'Sep 2019 — Jul 2023 · 3 yrs 11 mos',
     highlights: [
-      'Architected chatbot, automation, and system design initiatives spanning frontend, backend, and data layers.',
-      'Led CI/CD and release automation that kept large-scale services reliable.',
-      'Applied NLP, analytics, and AI tooling to streamline customer journeys.',
+      'Designed end-to-end AI orchestration systems that classify, route, and process customer inputs, operational requests, and internal workflows.',
+      'Built LLM-powered chatbots and digital employees to automate customer support, document Q&A, complaint routing, and operational data queries.',
+      'Implemented document embedding + vector database + semantic search using Python and LangChain to enable internal knowledge Q&A.',
+      'Designed AI workflows to translate natural-language requests into SQL queries, automating operational reporting.',
+      'Automated CI/CD, system monitoring, alerting, and packaging workflows for iOS and Android applications.',
+      'Reduced manual operational workload significantly through decision automation and AI-driven routing systems.',
     ],
-    stack: ['Python', 'Swift', 'PHP', 'Jenkins', 'NLP', 'Automation'],
+    stack: ['Python', 'ChatGPT / LLMs', 'LangChain', 'Vector DB', 'SQL', 'REST APIs', 'Jenkins', 'CI/CD', 'Automation Pipelines'],
   },
   {
     role: 'iOS Lead',
@@ -211,13 +215,13 @@ export default function ExperienceTimeline({ onNavigate }) {
               <div className='inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-3 py-1 text-sm font-medium'>
                 <Sparkles className='h-4 w-4' /> Experience Timeline
               </div>
-              <h1 className='text-3xl md:text-5xl font-bold tracking-tight leading-tight'>17+ years across mobile platforms, systems, and automation.</h1>
+              <h1 className='text-3xl md:text-5xl font-bold tracking-tight leading-tight'>17+ years of engineering experience across mobile platforms, systems, and automation.</h1>
               <p className='text-neutral-600 text-base md:text-lg'>
-                From hands-on iOS delivery to system analysis, CI/CD, and AI automation, this timeline captures the journey that shaped how I build resilient, user-first products.
+                From hands-on mobile delivery to system analysis, CI/CD, and, in recent years, applied AI automation, this timeline reflects the engineering journey that shaped how I design reliable, production-ready systems.
               </p>
               <div className='flex flex-wrap items-center gap-3'>
                 <Pill><MapPin className='h-3.5 w-3.5 mr-1' /> {PROFILE.location}</Pill>
-                <Pill><Briefcase className='h-3.5 w-3.5 mr-1' /> Mobile · System Analysis · Automation</Pill>
+                <Pill><Briefcase className='h-3.5 w-3.5 mr-1' /> Systems · AI Automation · Orchestration · Mobile (Background)</Pill>
                 <Pill><Clock className='h-3.5 w-3.5 mr-1' /> 2006 — 2024</Pill>
               </div>
               <div className='flex gap-3 pt-2'>
