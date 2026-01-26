@@ -11,6 +11,22 @@ const PROFILE = {
 
 const EXPERIENCES = [
   {
+    role: 'Applied AI & Automation System Engineer',
+    company: 'UK Daily Events (ukdailyevents.co.uk)',
+    type: 'Self-employed',
+    location: 'United Kingdom (Remote)',
+    period: 'Aug 2024 — Present · 1 yr 5 mos',
+    highlights: [
+      'Designed end-to-end AI automation and orchestration workflows to aggregate, classify, enrich, and publish event data from multiple sources.',
+      'Built n8n-based automation pipelines to process structured and unstructured data with reliability, error handling, and retry mechanisms.',
+      'Integrated LLMs to automate content enrichment, summarisation, localisation, and metadata generation within production workflows.',
+      'Designed API-driven orchestration layers, including caching and monitoring, to support production stability and scalability.',
+      'Automated multi-channel publishing workflows across web platforms, social channels, and internal systems.',
+      'Led system design from early prototyping and validation through to recent public production deployment.',
+    ],
+    stack: ['Python', 'n8n', 'LLMs', 'Automation', 'Orchestration', 'APIs', 'Caching', 'Monitoring'],
+  },
+  {
     role: 'System Analyst – AI & Automation Systems',
     company: 'Virtual Gaming Technology Limited',
     type: 'Full-time',
@@ -222,7 +238,7 @@ export default function ExperienceTimeline({ onNavigate }) {
               <div className='flex flex-wrap items-center gap-3'>
                 <Pill><MapPin className='h-3.5 w-3.5 mr-1' /> {PROFILE.location}</Pill>
                 <Pill><Briefcase className='h-3.5 w-3.5 mr-1' /> Systems · AI Automation · Orchestration · Mobile (Background)</Pill>
-                <Pill><Clock className='h-3.5 w-3.5 mr-1' /> 2006 — 2024</Pill>
+                <Pill><Clock className='h-3.5 w-3.5 mr-1' /> 2006 — Present</Pill>
               </div>
               <div className='flex gap-3 pt-2'>
                 <a
