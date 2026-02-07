@@ -1,16 +1,40 @@
-# React + Vite
+# Dennis Portfolio (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+個人作品集網站，使用 React + Vite + Tailwind CSS。
 
-Currently, two official plugins are available:
+## 執行指令
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1) 安裝套件
 
-## React Compiler
+```bash
+npm install
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2) 本地開發
 
-## Expanding the ESLint configuration
+```bash
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 預設會啟動在 `http://localhost:5173`
+
+### 3) 正式建置
+
+```bash
+npm run build
+```
+
+- 輸出目錄：`dist/`
+
+### 4) 本地預覽 build 結果
+
+```bash
+npm run preview
+```
+
+## Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
