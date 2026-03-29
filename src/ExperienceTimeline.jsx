@@ -11,10 +11,27 @@ const PROFILE = {
 
 const EXPERIENCES = [
   {
+    role: 'Full Stack Mobile Engineer (IoT & Live Streaming)',
+    company: 'Dote',
+    type: 'Contract',
+    location: 'United Kingdom · Remote',
+    period: 'Feb 2026 — Present',
+    highlights: [
+      'Leading development of a cross-platform Flutter mobile application focused on real-time IoT device interaction.',
+      'Implemented low-latency live video streaming using WebRTC and AWS Kinesis Video Streams for continuous monitoring.',
+      'Designed device-to-cloud communication pipelines using MQTT for real-time telemetry (temperature, humidity, device status).',
+      'Developed BLE workflows for secure device pairing, provisioning (Wi-Fi setup), and local device control.',
+      'Integrated AWS services (Kinesis, Lambda, S3) to build scalable streaming, processing, and storage infrastructure.',
+      'Implemented secure communication using key-pair authentication and encryption for device and cloud interactions.',
+      'Collaborated with hardware, backend, and product teams to deliver an integrated IoT ecosystem.',
+    ],
+    stack: ['Flutter', 'WebRTC', 'AWS Kinesis', 'MQTT', 'BLE', 'Lambda', 'S3', 'IoT'],
+  },
+  {
     role: 'Applied AI & Automation System Engineer',
     company: 'UK Daily Events (ukdailyevents.co.uk)',
     type: 'Self-employed',
-    location: 'United Kingdom (Remote)',
+    location: 'United Kingdom · Remote',
     period: 'Aug 2024 — Present · 1 yr 5 mos',
     highlights: [
       'Designed end-to-end AI automation and orchestration workflows to aggregate, classify, enrich, and publish event data from multiple sources.',
