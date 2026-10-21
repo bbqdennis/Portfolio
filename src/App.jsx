@@ -24,6 +24,7 @@ export default function App() {
       return
     }
     window.history.pushState({}, '', target)
+    window.scrollTo(0, 0)
     setPath(target)
   }, [])
 
