@@ -4,11 +4,11 @@ import { ArrowUpRight, Github, Linkedin, Mail, MapPin, Globe, Sparkles, External
 
 const PROFILE = {
   name: 'Dennis Cheng',
-  title: 'Applied AI & Automation System Designer',
+  title: 'Senior Software Engineer | Full Stack · Mobile · Cloud · IoT | Software Architecture · Applied AI',
   location: 'Manchester, United Kingdom',
-  tagline: 'I design AI-powered automation and orchestration systems that transform unstructured inputs into structured decisions and automated actions.',
+  tagline: 'I design, architect, and build end-to-end software solutions, spanning mobile applications, backend services, cloud infrastructure, and IoT connectivity. With a strong background in iOS development and system analysis, I combine software engineering expertise with applied AI and automation to deliver scalable, secure, and intelligent systems.',
   summary:
-    'Applied AI & Automation System Designer with over a decade of engineering experience.\nSpecialising in recent years in designing and delivering AI-powered automation and orchestration systems across telecom, mobile platforms, and internal operations.\n\nFocused on transforming unstructured inputs into structured decisions and automated actions using LLMs, Python, and workflow automation.',
+    'Senior Software Engineer with over 15 years of experience in software development, system architecture, and mobile technologies.\n\nSpecialising in designing and delivering end-to-end software solutions across mobile applications, backend services, cloud infrastructure, and IoT systems, with hands-on experience in real-time communication, live video streaming, and secure device connectivity.\n\nCombining extensive software engineering expertise with applied AI, LLM integration, Python, and workflow automation to build scalable, secure, and intelligent systems.',
   links: {
     linkedin: 'https://www.linkedin.com/in/dennis-cheng-49628222/',
     github: 'https://github.com/bbqdennis',
@@ -121,7 +121,7 @@ export default function Portfolio({ onNavigate }) {
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-6'>
               <div className='max-w-3xl'>
-                <h1 className='text-3xl md:text-5xl font-bold tracking-tight leading-tight'>Hi, I'm Dennis — I design applied AI & automation systems.</h1>
+                <h1 className='text-3xl md:text-5xl font-bold tracking-tight leading-tight'>Hi, I'm Dennis — a Senior Software Engineer specialising in Full Stack, Mobile, Cloud & IoT Systems.</h1>
                 <p className='mt-4 text-neutral-600 text-base md:text-lg'>{PROFILE.tagline}</p>
                 <div className='flex flex-wrap items-center gap-3 mt-6'>
                   <Pill><MapPin className='h-3.5 w-3.5 mr-1' /> {PROFILE.location}</Pill>
@@ -161,12 +161,12 @@ export default function Portfolio({ onNavigate }) {
       </section>
 
       {/* ABOUT */}
-      <Section id='about' title='About' icon={<Brain className='h-5 w-5' />} description='Applied AI & Automation System Designer focused on production-grade decision automation and system orchestration.'>
+      <Section id='about' title='About' icon={<Brain className='h-5 w-5' />} description='Senior Software Engineer specialising in end-to-end software architecture, spanning mobile, cloud, and IoT systems, with expertise in applied AI and automation.'>
         <div className='grid md:grid-cols-3 gap-6'>
           {[
-            { icon: <Code2 className='h-5 w-5' />, title: 'What I Do', points: ['Design AI-powered automation and orchestration systems for real-world operations.', 'Transform unstructured inputs (text, documents, requests, data) into structured decisions and automated actions.', 'Architect system workflows across frontend, backend, databases, and internal tools.', 'Build and integrate LLM-based systems using Python and workflow automation.']},
-            { icon: <Boxes className='h-5 w-5' />, title: 'How I Work', points: ['Translate business problems into system-level automation designs.', 'Design workflows that prioritise reliability, clarity, and maintainability.', 'Iterate with stakeholders using measurable operational impact.', 'Apply automation-first and system-thinking principles in delivery.']},
-            { icon: <Rocket className='h-5 w-5' />, title: 'What I’m After', points: ['Applied AI, Automation, or Internal Tools roles.', 'Teams solving real operational problems with AI and automation.', 'Environments that value system thinking, reliability, and pragmatic AI.']},
+            { icon: <Code2 className='h-5 w-5' />, title: 'What I Do', points: ['Architect and build end-to-end software solutions across mobile, backend, cloud, and IoT platforms.', 'Develop cross-platform mobile applications and scalable backend services.', 'Design real-time systems, including WebRTC live streaming, MQTT communication, and IoT device integration.', 'Integrate applied AI, LLMs, and automation into practical software solutions.']},
+            { icon: <Boxes className='h-5 w-5' />, title: 'How I Work', points: ['Translate business requirements into practical, scalable software architectures.', 'Take end-to-end ownership, from system design and implementation to deployment and maintenance.', 'Prioritise security, reliability, performance, and maintainability.', 'Collaborate across hardware, firmware, AI, and product teams to deliver integrated solutions.']},
+            { icon: <Rocket className='h-5 w-5' />, title: 'What I’m After', points: ['Senior Software Engineering, Technical Lead, or Software Architecture opportunities.', 'Projects involving mobile, cloud, IoT, real-time systems, and applied AI.', 'Teams building meaningful products that solve real-world problems.']},
           ].map((card) => (
             <div key={card.title} className='rounded-3xl border bg-white p-5'>
               <div className='flex items-center gap-2 text-lg font-semibold'>{card.icon} {card.title}</div>

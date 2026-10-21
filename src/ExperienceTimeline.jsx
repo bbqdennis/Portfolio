@@ -249,13 +249,16 @@ export default function ExperienceTimeline({ onNavigate }) {
               <div className='inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-3 py-1 text-sm font-medium'>
                 <Sparkles className='h-4 w-4' /> Experience Timeline
               </div>
-              <h1 className='text-3xl md:text-5xl font-bold tracking-tight leading-tight'>17+ years of engineering experience across mobile platforms, systems, and automation.</h1>
+              <h1 className='text-3xl md:text-5xl font-bold tracking-tight leading-tight'>17+ years of software engineering experience across mobile, cloud, and complex systems.</h1>
               <p className='text-neutral-600 text-base md:text-lg'>
-                From hands-on mobile delivery to system analysis, CI/CD, and, in recent years, applied AI automation, this timeline reflects the engineering journey that shaped how I design reliable, production-ready systems.
+                From native iOS development and system analysis to full stack engineering, cloud architecture, IoT, and applied AI, my journey has evolved towards designing and delivering end-to-end software solutions.
+              </p>
+              <p className='text-neutral-600 text-base md:text-lg'>
+                This timeline highlights the experience behind my approach to building scalable, secure, and production-ready systems.
               </p>
               <div className='flex flex-wrap items-center gap-3'>
                 <Pill><MapPin className='h-3.5 w-3.5 mr-1' /> {PROFILE.location}</Pill>
-                <Pill><Briefcase className='h-3.5 w-3.5 mr-1' /> Systems · AI Automation · Orchestration · Mobile (Background)</Pill>
+                <Pill><Briefcase className='h-3.5 w-3.5 mr-1' /> Software Architecture · Full Stack · Mobile · Cloud · IoT · Applied AI</Pill>
                 <Pill><Clock className='h-3.5 w-3.5 mr-1' /> 2006 — Present</Pill>
               </div>
               <div className='flex gap-3 pt-2'>
