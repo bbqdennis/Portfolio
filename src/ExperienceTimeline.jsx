@@ -4,28 +4,29 @@ import { ArrowLeft, Briefcase, Calendar, MapPin, Sparkles, Clock } from 'lucide-
 
 const PROFILE = {
   name: 'Dennis Cheng',
-  title: 'Applied AI & Automation System Designer',
+  title: 'Senior Software Engineer | Full Stack · Mobile · Cloud · IoT | Software Architecture · Applied AI',
   location: 'Manchester, United Kingdom',
   email: 'bbqdennis@yahoo.com.hk',
 }
 
 const EXPERIENCES = [
   {
-    role: 'Full Stack Mobile Engineer (IoT & Live Streaming)',
+    role: 'Full Stack Software Engineer — Mobile, Cloud & IoT Systems',
     company: 'Dote',
     type: 'Contract',
     location: 'United Kingdom · Remote',
     period: 'Feb 2026 — Present',
     highlights: [
-      'Leading development of a cross-platform Flutter mobile application focused on real-time IoT device interaction.',
-      'Implemented low-latency live video streaming using WebRTC and AWS Kinesis Video Streams for continuous monitoring.',
-      'Designed device-to-cloud communication pipelines using MQTT for real-time telemetry (temperature, humidity, device status).',
-      'Developed BLE workflows for secure device pairing, provisioning (Wi-Fi setup), and local device control.',
-      'Integrated AWS services (Kinesis, Lambda, S3) to build scalable streaming, processing, and storage infrastructure.',
-      'Implemented secure communication using key-pair authentication and encryption for device and cloud interactions.',
-      'Collaborated with hardware, backend, and product teams to deliver an integrated IoT ecosystem.',
+      'Leading the end-to-end software architecture and development of the Dote smart parenting ecosystem, with full technical ownership across mobile applications, backend services, cloud infrastructure, IoT connectivity, and live video streaming.',
+      'Architecting and developing cross-platform mobile applications using Flutter, with a focus on scalable architecture, real-time device communication, and seamless user experiences.',
+      'Designing and implementing low-latency live video streaming using WebRTC, AWS Kinesis Video Streams, and STUN/TURN connectivity, optimising connection reliability, latency, and cloud resource utilisation.',
+      'Building cloud-connected IoT infrastructure using AWS IoT Core, MQTT, and Python backend services to support device provisioning, remote control, sensor monitoring, telemetry, and real-time event processing.',
+      'Developing secure device connectivity and provisioning workflows, including BLE pairing, certificate-based authentication, device identity management, and encrypted communication.',
+      'Designing, deploying, and maintaining backend services and cloud infrastructure, integrating AWS services, REST APIs, databases, Nginx, and Linux-based production environments.',
+      'Implementing real-time monitoring and intelligent device features, including temperature and humidity tracking, motion and cry detection, device health monitoring, and AI-assisted parenting capabilities.',
+      'Driving software architecture decisions and cross-functional integration, collaborating closely with hardware, firmware, AI, and product teams to deliver scalable, secure, and production-ready IoT solutions.',
     ],
-    stack: ['Flutter', 'WebRTC', 'AWS Kinesis', 'MQTT', 'BLE', 'Lambda', 'S3', 'IoT'],
+    stack: ['Flutter', 'Python', 'WebRTC', 'MQTT', 'BLE', 'AWS Cloud', 'PostgreSQL', 'Redis', 'IoT'],
   },
   {
     role: 'Applied AI & Automation System Engineer',
